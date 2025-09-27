@@ -1,0 +1,108 @@
+/* #f3a2be #ffd3dd #f0f9f8 #c6e6e3 #81bfb7 */
+/*task 1.0*/
+html, body {
+    margin: 0;
+    background: linear-gradient(to bottom, #f3a2be, #c6e6e3);
+    background-attachment: fixed;
+    font-family: "Arial Black", Serif;
+    height: 100vh;
+}
+.navihead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #ffd3dd;
+}
+.logo {
+    font-size: 2em;
+    color: lavenderblush;
+    text-shadow: 0 0 20px rgba(243, 162, 190, 0.7);
+}
+.navi {
+    display: flex;
+    list-style: none;
+}
+.navi a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #f3a2be;
+    transition: color 0.5s;
+}
+.navi a:hover {
+    color: #81bfb7;
+}
+/*task 1.1*/
+.plave {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 40px 20px;
+    margin: 20px 20px;
+}
+.cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 35px;
+    text-align: center;
+    padding: 10px 10px 40px;
+    color: #f3a2be;
+    background: linear-gradient(to bottom, #ffd3dd, #f0f9f8);
+    transition: transform 0.5s;
+}
+.cards:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 4px 10px rgba(129, 191, 183, 0.7);
+}
+h3 {
+    font-size: 2em;
+    margin: 30px 0 0;
+}
+.cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.cards p {
+    font-style: italic;
+    color: #81bfb7;
+    font-size: 0.7em;
+    padding: 25px 25px 35px;
+    text-shadow: 0 1px 5px rgba(129, 191, 183, 0.3);
+}
+.button {
+    background-color: #c6e6e3;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+    font-size: 0.7em;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s;
+    text-decoration: none;
+    color: #f0f9f8;
+}
+.cards .button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(129, 191, 183, 0.4);
+    background-color: #81bfb7;
+}
+footer {
+    background-color: #81bfb7;
+    color: #f0f9f8;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+
+footer .disclaimer {
+    font-size: 12px;
+    color: #c6e6e3;
+}
