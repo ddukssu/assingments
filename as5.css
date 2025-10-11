@@ -1,0 +1,110 @@
+/*
+#d8c8b8
+#616852
+#78211e
+#bb9771
+#beb3ac
+*/
+
+html, body {
+    margin: 0;
+    background: url("https://i.pinimg.com/1200x/67/c6/bf/67c6bfbeef6307aa587fedab6e64fcc8.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Arial Black", serif;
+    height: 100vh;
+}
+.navihead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #78211e;
+}
+.logo {
+    font-size: 2em;
+    color: #d8c8b8;
+    text-shadow: 0 0 20px #bb9771;
+}
+.navihead a{
+    font-size: 1em;
+    display: flex;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #bb9771;
+    transition: color 0.5s, transform 0.5s;
+}
+.navihead a:hover {
+    color: #d8c8b8;
+    transform: scale(1.2);
+}
+
+.bebe {
+    font-family: 'Mountains of Christmas', cursive;
+    /*background: linear-gradient(to bottom, #d8c8b8, #beb3ac) fixed;*/
+    background-color: rgba(216,200,184,0.9);
+    max-width: 70%;
+    color: rgb(200, 50, 50);
+    text-shadow: 0 0 8px rgba(200, 10, 30, 0.5);
+    margin: 5em auto;
+    padding: 3em;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chb {
+    color: #616852;
+}
+.textt {
+    color: #78211e;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+.form-control::placeholder {
+    color: #bb9771;
+    opacity: 0.4;
+}
+.form-select {
+    color: #bb9771;
+}
+.sasa {
+    font-size: 1.2em;
+}
+img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.btn {
+    padding: 15px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 3px 5px #bb9771;
+    cursor: pointer;
+}
+#submit {
+    background-color: #78211e;
+}
+
+#reset {
+    background-color: #616852;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgba(97, 104, 82, 0), rgb(97 104 82));
+    color: #d8c8b8;
+    text-align: center;
+    padding: 50px 0 10px;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+footer .disclaimer {
+    font-size: 12px;
+    color: #bb9771;
+}
