@@ -1,0 +1,257 @@
+/* #102b53 #50698d #ceb5d4 #4e7ab1 #7d9fc0 */
+html, body {
+    margin: 0;
+    background: linear-gradient(to bottom, #102b53, #4e7ab1) fixed;
+    font-family: "Arial Black", serif;
+    height: 100vh;
+}
+.navihead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #50698d;
+}
+.logo {
+    font-size: 2em;
+    color: #ceb5d4;
+    text-shadow: 0 0 20px rgba(72, 122, 177, 0.7);
+}
+.navi {
+    display: flex;
+    list-style: none;
+}
+.navi a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #102b53;
+    transition: color 0.5s;
+}
+.navi a:hover {
+    color: #7d9fc0;
+}
+
+.erm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:"s1 s3" "s2 s3";
+    margin: 30px;
+    gap: 20px;
+    color: #7d9fc0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(72, 122, 177, 0.6);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(16, 43, 83, 0.5);
+}
+
+.box1 {
+    grid-area: s1;
+}
+
+.box2 {
+    grid-area: s2;
+}
+
+.box3 {
+    grid-area: s3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+}
+.butto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 15px;
+}
+button {
+    background: #7d9fc0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+button:hover {
+    background: #4e7ab1;
+    color: #ceb5d4;
+}
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+}
+.bun {
+    padding: 20px;
+    margin: 0;
+    font-size: 2em;
+}
+
+#stylebox {
+    background: rgba(16, 43, 83, 0.3);
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s, font-size 0.3s;
+}
+
+#colorbox {
+    background: rgba(16, 43, 83, 0.3);
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#itemlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#itemlist li {
+    background: rgba(16, 43, 83, 0.3);
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+#itemlist li:hover {
+    background: rgba(16, 43, 83, 0.5);
+}
+
+#displayinput,
+#calcharo {
+    background: rgba(16, 43, 83, 0.3);
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    min-height: 20px;
+}
+
+.todo-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 50px;
+  color: #7d9fc0;
+}
+
+.todo-left, .todo-right {
+  background: rgba(72, 122, 177, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  min-height: 350px;
+  box-shadow: 0 0 20px rgba(16, 43, 83, 0.5);
+}
+
+.todo-left h2, .todo-right h2 {
+  color: #ceb5d4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  background: rgba(16, 43, 83, 0.3);
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.task-item:hover {
+  background: rgba(16, 43, 83, 0.5);
+}
+
+.task-text span {
+  font-size: 0.9em;
+  color: #d1c9e0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delBtn {
+  background: #50698d;
+  border: none;
+  color: #ceb5d4;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delBtn:hover {
+  background: #7d9fc0;
+  color: #102b53;
+}
+
+#taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#taskForm input,
+#taskForm textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+}
+
+#addTask {
+  background: #7d9fc0;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#addTask:hover {
+  background: #4e7ab1;
+  color: #ceb5d4;
+}
+
+.footer {
+    background-color: #7d9fc0;
+    color: #ceb5d4;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+.footer .disclaimer {
+    font-size: 12px;
+    color: #4e7ab1;
+}
